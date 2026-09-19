@@ -10,8 +10,8 @@
   --on-dark-mute: #c3c3c3;
   --on-dark-faint: #9a9a9a;
 
-  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --container: 1370px;
   --gutter: clamp(20px, 5vw, 40px);
@@ -146,7 +146,7 @@ button {
 }
 
 .section__title {
-  font-family: var(--font-serif);
+  font-family: "Fahkwang", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   font-weight: 600;
   font-size: clamp(28px, 3.2vw, 42px);
   line-height: 1.15;
@@ -158,7 +158,7 @@ button {
   font-size: clamp(14px, 1.1vw, 15px);
   line-height: 1.6;
   color: var(--ink-soft);
-  max-width: 62ch;
+  /* max-width: 62ch; */
   margin: 18px auto 0;
 }
 
@@ -330,6 +330,7 @@ button {
 }
 
 .hero__title {
+  font-family: "Fahkwang", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   font-size: clamp(30px, 2.72vw, 42px);
   font-weight: 500;
   line-height: 1.18;
@@ -339,11 +340,12 @@ button {
 }
 
 .hero__text {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.68;
-  color: var(--on-dark-mute);
+  color: #fff;
   margin-top: 22px;
   max-width: 44ch;
+  font-weight: 400;
 }
 
 .hero__copy > [data-stagger]:last-child {
@@ -551,7 +553,7 @@ button {
 
 .cat__name {
   display: block;
-  font-size: clamp(17px, 1.5vw, 20px);
+  font-size: clamp(17px, 1.5vw, 24px);
   font-weight: 700;
   line-height: 1.2;
   transition: transform var(--dur-slow) var(--ease-out);
@@ -559,7 +561,7 @@ button {
 
 .cat__count {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.82);
   margin-top: 5px;
   transition: transform var(--dur-slow) var(--ease-out);
@@ -715,9 +717,9 @@ button {
     justify-content: center;
   }
 
-  .section__lead {
+  /* .section__lead {
     max-width: 46ch;
-  }
+  } */
 
   .cats {
     display: flex;
